@@ -1,7 +1,7 @@
 import * as React from "react";
 // import "./styles.css";
 import lottie from "lottie-web";
-import animationData from "./lottie-noGRID_BG.json";
+import animationData from "./lottie.json";
 const LottieControl = () => {
   const lottieRef = React.useRef<HTMLDivElement>(null);
 
