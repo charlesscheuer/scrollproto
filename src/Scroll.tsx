@@ -4,6 +4,7 @@ import lottie from "lottie-web";
 import animationData from "./SCROLL.json";
 const LottieControl = () => {
   const lottieRef = React.useRef<HTMLDivElement>(null);
+  // comitt
 
   React.useEffect(() => {
     var animDuration = 2000;
