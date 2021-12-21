@@ -1,7 +1,7 @@
 import * as React from "react";
 // import "./styles.css";
 import lottie from "lottie-web";
-import animationData from "./lottie.json";
+import animationData from "./SCROLL.json";
 const LottieControl = () => {
   const lottieRef = React.useRef<HTMLDivElement>(null);
 
@@ -43,7 +43,7 @@ const LottieControl = () => {
     };
   }, []);
 
-  return <div style={{ position: "fixed", width: "100%" }} ref={lottieRef}></div>;
+  return <div style={{ position: "fixed", width: "100%", height: "auto" }} ref={lottieRef}></div>;
 };
 
 export default LottieControl;
