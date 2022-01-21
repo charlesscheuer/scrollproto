@@ -7,7 +7,7 @@ const LottieControl = () => {
   // comitt
 
   React.useEffect(() => {
-    var animDuration = 2000;
+    var animDuration = 4000;
     const anim = lottie.loadAnimation({
       container: lottieRef.current!,
       renderer: "svg",
