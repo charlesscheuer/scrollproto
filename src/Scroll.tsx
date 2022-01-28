@@ -7,7 +7,7 @@ const LottieControl = () => {
   // comitt
 
   React.useEffect(() => {
-    var animDuration = 1000;
+    var animDuration = 2000;
     const anim = lottie.loadAnimation({
       container: lottieRef.current!,
       renderer: "svg",
@@ -44,7 +44,7 @@ const LottieControl = () => {
     };
   }, []);
 
-  return <div style={{ position: "fixed", width: "100%", height: "auto" }} ref={lottieRef}></div>;
+  return <div style={{ width: "100%", height: "auto" }} ref={lottieRef}></div>;
 };
 
 export default LottieControl;
