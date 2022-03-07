@@ -1,13 +1,13 @@
 import * as React from "react";
 // import "./styles.css";
 import lottie from "lottie-web";
-import animationData from "./SCROLL.json";
+import animationData from "./color.json";
 const LottieControl = () => {
   const lottieRef = React.useRef<HTMLDivElement>(null);
   // comitt
 
   React.useEffect(() => {
-    var animDuration = 2000;
+    var animDuration = 1000;
     const anim = lottie.loadAnimation({
       container: lottieRef.current!,
       renderer: "svg",
