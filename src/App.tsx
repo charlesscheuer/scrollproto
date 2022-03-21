@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import LottieControl from './Scroll.tsx'
 
 export default function App() {
-  const textRef = React.useRef<HTMLDivElement>(null);
+  // const textRef = React.useRef<HTMLDivElement>(null);
   const [scroll, setScroll] = useState(0)
 
   React.useEffect(() => {
