@@ -2,25 +2,6 @@ import React, { useState } from 'react'
 import LottieControl from './Scroll.tsx'
 
 export default function App() {
-  // const textRef = React.useRef<HTMLDivElement>(null);
-  const [scroll, setScroll] = useState(0)
-
-  React.useEffect(() => {
-    const onScroll = () => {
-      console.log(window.scrollY);
-      setScroll(window.scrollY > 184 ? -1*(window.scrollY - 184) : 0)
-    };
-
-    document.addEventListener("scroll", onScroll);
-
-    return () => {
-      document.removeEventListener("scroll", onScroll);
-    };
-  }, []);
-
-  function getScrollAmount() {
-    return scroll
-  }
 
   return [
     <div style={{height: "10000px", width: "100vw",  backgroundColor: "#111"}}>
